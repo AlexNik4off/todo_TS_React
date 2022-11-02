@@ -1,0 +1,91 @@
+.task__add {
+  display: flex;
+  width: 90%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.add__task__input {
+  width: 60%;
+  border-radius: 50px;
+  padding: 20px 30px;
+  font-size: 25px;
+  border: none;
+  transition: 0.2;
+  box-shadow: inset 0 0 8px #363f3f;
+}
+
+.add__task__button {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  border-radius: 50px;
+  right: 20%;
+  font-size: 20px;
+  background-color: #212e32;
+  color: white;
+  box-shadow: 0 0 10px #87a7a7;
+}
+
+.add__task__button:hover {
+  background-color: #88b9fa;
+  color: #212e32;
+  transition: 0.4s;
+}
+
+.add__task__button:active {
+  transform: scale(0.8);
+  background-color: #d50032;
+  box-shadow: 0 0 5px #d50032;
+}
+
+.todolist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  flex-wrap: wrap;
+  color: #212e32;
+}
+
+.todocard {
+  display: flex;
+  align-items: center;
+  width: 29.5%;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 15px;
+  background-color: silver;
+}
+
+.todocard__icon {
+  margin-left: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.todocard__text {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+  .todocard {
+    width: 40%;
+  }
+}
+
+@media (max-width: 700px) {
+  .input {
+    width: 95%;
+  }
+  .todos {
+    width: 95%;
+  }
+  .todocard {
+    width: 100%;
+  }
+}
